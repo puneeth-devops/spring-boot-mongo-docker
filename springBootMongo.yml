@@ -60,7 +60,7 @@ spec:
     spec:
       containers:
       - name: springappcontainer
-        image: puneethnaik/spring-boot-mongo-k8s:export
+        image: 290988595886.dkr.ecr.ap-south-1.amazonaws.com/spring-boot-mongo:imagetag
         ports:
         - containerPort: 8080
         env:
