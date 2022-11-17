@@ -1,5 +1,4 @@
 version: '3.3'
-
 services:
   springboot:
     image: 290988595886.dkr.ecr.ap-south-1.amazonaws.com/spring-boot-mongo:version
@@ -24,7 +23,6 @@ services:
         condition: on-failure
         delay: 10s
         max_attempts: 5
-
   mongo:
     image: mongo
     environment:
@@ -35,11 +33,9 @@ services:
     restart: always
     networks:
     - springappnetwork
-    
 volumes:
   mongodb:
-    external: true
-    
+    external: true   
 networks:
   springappnetwork:
     external: true
