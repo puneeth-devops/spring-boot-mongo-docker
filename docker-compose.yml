@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   springboot:
-    image: 290988595886.dkr.ecr.ap-south-1.amazonaws.com/spring-boot-mongo:version
+    image: 290988595886.dkr.ecr.ap-south-1.amazonaws.com/spring-boot-mongo:imagetag
     restart: always # This will be ignored if we deploy in docker swarm
     environment:
     - MONGO_DB_HOSTNAME=mongo
